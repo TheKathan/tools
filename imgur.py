@@ -1,6 +1,6 @@
 #! /usr/bin/env python
  
-from sh import curl  # install `sh` with `pip install sh`
+from sh import curl
 import json
 import sys
  
