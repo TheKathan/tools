@@ -1,11 +1,9 @@
-# A Sample Python program will capture photo from picamera and Create another image with Face Detection
-# Copyright 2014.  Sunny Cheung
-
 import cv2
 import config
 import picamera
 import datetime
 import socket
+import sys
 
 def detect_faces(image):
     haar_faces = cv2.CascadeClassifier(config.HAAR_FACES)
@@ -20,7 +18,7 @@ if __name__ == "__main__":
 
     while True:
 	count=0
-    	image2 = cv2.imread('/tmp/stream/tmp.jpg')
+    	image2 = cv2.imread(sys.argv[1])
 	image = cv2.cvtColor(image2, cv2.COLOR_BGR2GRAY)
 
 	faces = detect_faces(image)
