@@ -7,7 +7,7 @@ import sys
 try:
     resp = curl(
         "https://api.imgur.com/3/image",
-        H="Authorization: Client-ID 61377a09141e945",  # Get your client ID from imgur.com
+        H="Authorization: Client-ID _id",  # Get your client ID from imgur.com
         X="POST",
         F='image=@%s' % sys.argv[1]
     )
