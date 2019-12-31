@@ -79,8 +79,8 @@ else:
         f.write(ext_ip)
         f.close()
         logf.write("...sending mail...\n")
-        #sendMail(['gonacfaria@gmail.com'],'gonacfaria@gmail.com','Hello from %s!' % fqn,'Server external IP address: %s' % ext_ip,[])
-        bashCommand = "echo 'Hello' | mail -s 'IP Changed' gonacfaria@gmail.com" 
+        #sendMail(['_email'],'_email','Hello from %s!' % fqn,'Server external IP address: %s' % ext_ip,[])
+        bashCommand = "echo 'Hello' | mail -s 'IP Changed' _email" 
 	process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
 	output = process.communicate()[0]
 	logf.write("...all done!\n")
