@@ -1,0 +1,9 @@
+.vscode/
+python/jira/config.ini
+c#/HandyApi/HandyApi/bin/
+c#/HandyApi/HandyApi/obj/
+c#/HandyConsole/.idea/
+c#/HandyConsole/.vs/
+c#/HandyConsole/HandyConsole/bin/
+c#/HandyConsole/HandyConsole/obj/
+c#/HandyApi/.idea/
